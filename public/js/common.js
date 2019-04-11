@@ -35,27 +35,7 @@ $('.btn-dop-js').click(function(){
 	.next().fadeIn().addClass('active');
 });
 
-	// modal window
-	$('.popup-with-move-anim').magnificPopup({
-		type: 'inline',
-
-		fixedContentPos: true,
-		fixedBgPos: true,
-
-		overflowY: 'auto',
-
-		closeBtnInside: true,
-		preloader: false,
-
-		midClick: true,
-		removalDelay: 300,
-		mainClass: 'my-mfp-zoom-in',
-		tClose: 'Закрыть (Esc)',
-	});
-
-	// / modal window
  
-
 	// mask for input
 
 
@@ -67,19 +47,7 @@ $('.btn-dop-js').click(function(){
 		$('#modal-win .title-js').html($(this).data('title'));
 	})
 
-	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-
-		loop: true,
-		fixedContentPos: false
-	});
-	 
  
-
 	// })
 	$(".accordion__btn").click(function () {
 		$(this).toggleClass('active').next().slideToggle().siblings('.accordion__toggle-block').slideUp();
