@@ -28,6 +28,19 @@ $('.btn-next-js').click(function(){
 	$(this).parents('.window-block').hide().removeClass('active')
 	.next().fadeIn().addClass('active');
 });
+$('.slide__btn-back--js').click(function(){
+	var par = $(this).parents('.window-block');
+	if (par.is(":first-child"))
+		{
+			par.parent().hide().removeClass('active')
+			.prev().fadeIn().addClass('active');
+	}
+	else{
+
+		par.hide().removeClass('active')
+		.prev().fadeIn().addClass('active');
+	}
+});
 
 
 $('.btn-dop-js').click(function(){ 
